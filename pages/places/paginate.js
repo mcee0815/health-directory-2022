@@ -91,7 +91,7 @@ export default function App({allPlaces}) {
                 </a>
                 
                 {
-                    place.web_site ? <a className={styles.website} target="_blank" href={`http://${place.web_site}`} ><FaGlobe/>  Web</a>
+                    place.web_site ? <a className={styles.website} target="_blank" rel="noreferrer" href={`http://${place.web_site}`} ><FaGlobe/>  Web</a>
                     : ""
                 }
                 

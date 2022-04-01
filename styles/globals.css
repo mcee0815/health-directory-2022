@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 body {
-  background: #f2f2f2;
-  color: #333;
-  font-family: "Nunito";
+  background: white;
+  /* background: #f2f2f2; */
+  /* color: #333; */
+  font-family: "system-ui";
 }
 a {
   color: #333;
@@ -43,3 +44,34 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+.pagination a {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #6c7ac9;
+  color: #6c7ac9;
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: #6c7ac9;
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
+
